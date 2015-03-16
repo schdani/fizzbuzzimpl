@@ -5,11 +5,14 @@ import static org.junit.Assert.*;
 
 public class FizzBuzzerTest {
 
-    private FizzBuzzer fizzBuzzer = new FizzBuzzer();
+    private final FizzBuzzer fizzBuzzer = new FizzBuzzer();
 
     @Test
-    public void executeShouldReturnFizzIfTheNumberIsDividableBy3() {
+    public void executeShouldReturnFizzIfTheNumberIsDividableBy3OrContainsA3() {
         assertEquals("fizz", fizzBuzzer.execute(3));
+        assertEquals("fizz", fizzBuzzer.execute(6));
+        assertEquals("fizz", fizzBuzzer.execute(13));
+        assertEquals("fizz", fizzBuzzer.execute(103));
     }
 
     @Test
@@ -38,8 +41,8 @@ public class FizzBuzzerTest {
     
     @Test
     public void executeShouldReturnBuzzWizzIfTheNumberIsDividableBy35() {
-        assertEquals("buzzwizz", fizzBuzzer.execute(35));
         assertEquals("buzzwizz", fizzBuzzer.execute(70));
+        assertEquals("buzzwizz", fizzBuzzer.execute(140));
     }
     
     @Test

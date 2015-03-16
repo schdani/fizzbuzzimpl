@@ -8,4 +8,5 @@ Additional tasks
  - For numbers which are multiples of three and seven print 'FizzWizz'
  - For numbers which are multiples of five and seven print 'BuzzWizz'
  - For numbers which are multiples of three, five and seven print 'FizzBuzzWizz'
+ - Also print Fizz for numbers which contain a three
 
