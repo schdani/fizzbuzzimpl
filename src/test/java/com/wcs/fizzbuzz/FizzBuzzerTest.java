@@ -23,13 +23,19 @@ public class FizzBuzzerTest {
         assertEquals("fizzbuzz", fizzBuzzer.execute(15));
         assertEquals("fizzbuzz", fizzBuzzer.execute(30));
     }
+    
+    @Test
+    public void executeShouldReturnWizzIfTheNumberIsDividableBy7() {
+        assertEquals("wizz", fizzBuzzer.execute(7));
+        assertEquals("wizz", fizzBuzzer.execute(49));
+    }
 
     @Test
     public void executeShouldReturnTheSameNumberIfNoOtherRequirementIsFulfilled() {
         assertEquals("1", fizzBuzzer.execute(1));
         assertEquals("2", fizzBuzzer.execute(2));
         assertEquals("4", fizzBuzzer.execute(4));
-        assertEquals("7", fizzBuzzer.execute(7));
+        assertEquals("8", fizzBuzzer.execute(8));
     }
 
 }

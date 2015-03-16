@@ -10,6 +10,9 @@ public class FizzBuzzer {
         if (number % 5 == 0) {
             result.append("buzz");
         }
+        if (number % 7 == 0) {
+            return "wizz";
+        }
         if (result.length() == 0) {
             return String.valueOf(number);
         }
