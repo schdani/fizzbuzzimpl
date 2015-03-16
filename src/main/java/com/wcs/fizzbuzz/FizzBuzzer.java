@@ -11,7 +11,7 @@ public class FizzBuzzer {
             result.append("buzz");
         }
         if (number % 7 == 0) {
-            return "wizz";
+            result.append("wizz");
         }
         if (result.length() == 0) {
             return String.valueOf(number);
