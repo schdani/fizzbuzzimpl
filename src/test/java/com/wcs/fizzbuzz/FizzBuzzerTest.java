@@ -8,32 +8,9 @@ public class FizzBuzzerTest {
     private final FizzBuzzer fizzBuzzer = new FizzBuzzer();
 
     @Test
-    public void executeShouldReturnFizzIfTheNumberIsDividableBy3OrContainsA3() {
-        assertEquals("fizz", fizzBuzzer.execute(3));
-        assertEquals("fizz", fizzBuzzer.execute(6));
-        assertEquals("fizz", fizzBuzzer.execute(13));
-        assertEquals("fizz", fizzBuzzer.execute(103));
-    }
-
-    @Test
-    public void executeShouldReturnBuzzIfTheNumberIsDividableBy5OrContainsA5() {
-        assertEquals("buzz", fizzBuzzer.execute(5));
-        assertEquals("buzz", fizzBuzzer.execute(10));
-        assertEquals("buzz", fizzBuzzer.execute(52));
-        assertEquals("buzz", fizzBuzzer.execute(50002));
-    }
-
-    @Test
     public void executeShouldReturnBuzzIfTheNumberIsDividableBy15OrContainsA3OrA5() {
         assertEquals("fizzbuzz", fizzBuzzer.execute(15));
         assertEquals("fizzbuzz", fizzBuzzer.execute(30));
-    }
-    
-    @Test
-    public void executeShouldReturnWizzIfTheNumberIsDividableBy7OrContainsA7() {
-        assertEquals("wizz", fizzBuzzer.execute(7));
-        assertEquals("wizz", fizzBuzzer.execute(49));
-        assertEquals("wizz", fizzBuzzer.execute(7001));
     }
     
     @Test
