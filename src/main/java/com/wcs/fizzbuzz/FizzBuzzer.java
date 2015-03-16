@@ -9,10 +9,10 @@ public class FizzBuzzer {
         if (number % 3 == 0 || stringNumber.contains("3")) {
             result.append("fizz");
         }
-        if (number % 5 == 0) {
+        if (number % 5 == 0 || stringNumber.contains("5")) {
             result.append("buzz");
         }
-        if (number % 7 == 0) {
+        if (number % 7 == 0 || stringNumber.contains("7")) {
             result.append("wizz");
         }
         if (result.length() == 0) {
