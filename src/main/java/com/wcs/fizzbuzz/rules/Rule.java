@@ -1,4 +1,4 @@
-package com.wcs.fizzbuzz;
+package com.wcs.fizzbuzz.rules;
 
 /**
  *
